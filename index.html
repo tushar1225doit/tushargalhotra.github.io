@@ -1,116 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Tushar Galhotra | Cloud & IT Support</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+<title>Tushar Galhotra | Cloud Engineer</title>
 
-<style>
+<link rel="stylesheet" href="style.css">
 
-body{
-font-family:Poppins;
-margin:0;
-background:#0f172a;
-color:white;
-}
-
-header{
-display:flex;
-justify-content:space-between;
-padding:20px 10%;
-background:#020617;
-position:sticky;
-top:0;
-}
-
-nav a{
-margin-left:20px;
-text-decoration:none;
-color:#38bdf8;
-font-weight:500;
-}
-
-.hero{
-height:90vh;
-display:flex;
-flex-direction:column;
-justify-content:center;
-align-items:center;
-text-align:center;
-}
-
-.hero h1{
-font-size:48px;
-}
-
-.hero span{
-color:#38bdf8;
-}
-
-.btn{
-background:#38bdf8;
-padding:12px 25px;
-border-radius:6px;
-text-decoration:none;
-color:black;
-font-weight:bold;
-}
-
-section{
-padding:80px 10%;
-}
-
-.skills{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
-gap:20px;
-}
-
-.card{
-background:#1e293b;
-padding:20px;
-border-radius:10px;
-}
-
-.projects{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:20px;
-}
-
-footer{
-text-align:center;
-padding:20px;
-background:#020617;
-}
-
-</style>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
 
 </head>
 
 <body>
 
 <header>
-<h2>Tushar</h2>
-<nav>
-<a href="#about">About</a>
-<a href="#skills">Skills</a>
-<a href="#projects">Projects</a>
-<a href="#contact">Contact</a>
+
+<nav class="navbar">
+
+<div class="logo">TG</div>
+
+<ul class="nav-links">
+
+<li><a href="#about">About</a></li>
+<li><a href="#skills">Skills</a></li>
+<li><a href="#projects">Projects</a></li>
+<li><a href="#contact">Contact</a></li>
+
+</ul>
+
 </nav>
+
 </header>
 
 <section class="hero">
 
-<h1>Hello, I'm <span>Tushar Galhotra</span></h1>
+<h1>Hi, I'm</h1>
 
-<p>Aspiring Cloud Engineer | Azure | IT Support</p>
+<h2>Tushar Galhotra</h2>
 
-<br>
+<h3>Aspiring Cloud Engineer</h3>
 
-<a class="btn" href="https://github.com/tushar1225doit">View GitHub</a>
+<p>
+I build cloud infrastructure and learn modern technologies like Azure,
+Docker and networking.
+</p>
+
+<a class="btn" href="#projects">View My Work</a>
 
 </section>
 
@@ -119,8 +56,13 @@ background:#020617;
 <h2>About Me</h2>
 
 <p>
-Cloud and IT Support enthusiast with experience in networking, system troubleshooting, and cloud platforms.
-Currently preparing for Azure certifications and building hands-on IT labs.
+
+I am an aspiring cloud engineer with experience in networking,
+system troubleshooting and IT support.
+
+I hold a Master’s degree in Information & Communication Technology
+and currently preparing for Microsoft Azure certifications.
+
 </p>
 
 </section>
@@ -129,16 +71,16 @@ Currently preparing for Azure certifications and building hands-on IT labs.
 
 <h2>Skills</h2>
 
-<div class="skills">
+<div class="skills-grid">
 
-<div class="card">Azure</div>
-<div class="card">AWS Basics</div>
-<div class="card">Networking (DNS, DHCP, TCP/IP)</div>
-<div class="card">Windows Troubleshooting</div>
-<div class="card">Microsoft 365</div>
-<div class="card">Docker</div>
-<div class="card">Python</div>
-<div class="card">Git & GitHub</div>
+<span>Azure</span>
+<span>AWS</span>
+<span>Networking</span>
+<span>Python</span>
+<span>Docker</span>
+<span>Kubernetes</span>
+<span>Microsoft 365</span>
+<span>Windows Support</span>
 
 </div>
 
@@ -148,21 +90,30 @@ Currently preparing for Azure certifications and building hands-on IT labs.
 
 <h2>Projects</h2>
 
-<div class="projects">
+<div class="project-grid">
 
 <div class="card">
-<h3>Azure Static Website</h3>
-<p>Hosted a personal portfolio using Azure services.</p>
+
+<h3>Azure Portfolio Website</h3>
+
+<p>Portfolio hosted using Azure Static Web Apps.</p>
+
 </div>
 
 <div class="card">
-<h3>IT Support Lab</h3>
-<p>Created Windows VM users, networking tests, and troubleshooting lab.</p>
+
+<h3>Virtual Network Lab</h3>
+
+<p>Configured Azure VNets, subnets and NSG rules.</p>
+
 </div>
 
 <div class="card">
-<h3>Networking Diagnostics</h3>
-<p>Practiced tools like ipconfig, ping, tracert for network troubleshooting.</p>
+
+<h3>Windows Server Home Lab</h3>
+
+<p>Practiced user management and networking tasks.</p>
+
 </div>
 
 </div>
@@ -171,11 +122,11 @@ Currently preparing for Azure certifications and building hands-on IT labs.
 
 <section id="contact">
 
-<h2>Contact</h2>
+<h2>Get In Touch</h2>
 
-<p>Email: tushar1225.doit@gmail.com</p>
+<p>If you would like to work together feel free to contact me.</p>
 
-<p>GitHub: github.com/tushar1225doit</p>
+<a class="btn" href="mailto:tushar1225.doit@gmail.com">Say Hello</a>
 
 </section>
 
@@ -185,5 +136,8 @@ Currently preparing for Azure certifications and building hands-on IT labs.
 
 </footer>
 
+<script src="script.js"></script>
+
 </body>
+
 </html>
